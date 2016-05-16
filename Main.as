@@ -1894,10 +1894,10 @@ public var lvlArrayPlus6:Array = [];
 				}
 			}
 			
-			if(e.keyCode == Keyboard.N)
+			/*if(e.keyCode == Keyboard.N)
 			{
 				nextLevel();
-			}
+			}*/
 		}
 		
 		public function playerLoop(e:Event)
