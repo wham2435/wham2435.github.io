@@ -430,8 +430,8 @@ public var downBumping4:Array = [];
 		public var lvlArrayPlus1:Array = new Array(
 		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 		1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
-		1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6,6,6,1,
-		1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,6,0,K,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,1,
+		1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,6,6,6,6,6,1,
+		1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,6,K,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,1,
 		1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,6,6,0,0,0,6,6,6,6,6,6,1,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,0,0,G,0,6,1,
 		1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,6,6,6,6,6,1,0,0,0,0,0,0,0,0,0,0,0,6,5,5,5,5,1,1,1,1,1,1,1,1,1,
 		1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,0,0,0,0,6,6,6,6,1,0,0,0,0,0,0,1,1,1,1,0,6,0,0,0,0,0,0,0,0,0,0,0,0,1,
@@ -681,15 +681,24 @@ public var downBumping4:Array = [];
 			{
 				if (lvlArray[i] == 1)
 				{
+					//checking if we move onto the next row
+					//this checks if i is divisible by the # of columns
 					if (i/lvlColumns == int(i/lvlColumns))
 					{
 						row++;
 					}
+					//making a new block
 					var newWall:Wall = new Wall();
+					//drawing the block
+					//newWall.graphics.beginFill(0x999999/*The color for shape*/,1/*The alpha for the shape*/);
+					//turning the shape into a square
+					//newWall.graphics.drawRect(0,0,25,25);
 					newWall.y = 0;
 					newWall.x = 0;
+					//change the coordinates of the block;
 					newWall.x = (i - (row - 1) * lvlColumns) * newWall.width;
 					newWall.y = (row - 1) * newWall.height;
+					//adding it to stage
 					blockHolder.addChild(newWall);
 					blockIdentifier.push(1);
 				}
@@ -2328,7 +2337,7 @@ public var downBumping4:Array = [];
 				else if (blockIdentifier[i] == 2)
 				{
 					//Spring
-					if (hitBlock.hitTestPoint(player.x - ((player.width / 2) - 3),player.y,true) || hitBlock.hitTestPoint(player.x + ((player.width / 2) - 3),player.y,true))
+					if (hitBlock.hitTestPoint(player.x,player.y,true))
 					{
 						if(ySpeed > 0)
 						{
