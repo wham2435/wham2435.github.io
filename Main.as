@@ -1584,15 +1584,6 @@ public var lvlArrayPlus6:Array = [];
 				R_Pressed = false;
 			}
 			
-			if(key.isDown(78)) //N
-			{
-				N_Pressed = true;
-			}
-			else
-			{
-				N_Pressed = false;
-			}
-			
 			if(key.isDown(84)) //T
 			{
 				T_Pressed = true;
@@ -1778,11 +1769,6 @@ public var lvlArrayPlus6:Array = [];
 				{
 					p1Win = true;
 				}
-			}
-			
-			if(e.keyCode == Keyboard.N)
-			{
-				nextLevel();
 			}
 		}
 		
