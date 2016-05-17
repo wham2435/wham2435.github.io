@@ -1323,6 +1323,12 @@ public var lvlArrayPlus6:Array = [];
 						
 					p1CheckpointX = playerX;
 					p1CheckpointY = playerY;
+					p2CheckpointX = playerX;
+					p2CheckpointY = playerY;
+					p3CheckpointX = playerX;
+					p3CheckpointY = playerY;
+					p4CheckpointX = playerX;
+					p4CheckpointY = playerY;
 					
 					if (!playerActive)
 					{
