@@ -12,6 +12,8 @@
 	import flash.ui.Keyboard;
 	import flash.events.MouseEvent;
 	import KeyObject;
+	import flash.media.Sound;
+	import flash.media.SoundChannel;
 
 	public class Main extends MovieClip
 	{
@@ -49,7 +51,7 @@
 		public var p3TextTime:int = 0;
 		public var p4TextTime:int = 0;
 
-		public var currentLevel:int = 1;
+		public var currentLevel:int = 0;
 		public var row:int = 0;
 
 		public var X:String = 'PLAYER';
@@ -186,6 +188,18 @@ public var downBumping4:Array = [];
 public var lvlArray6:Array = [];
 public var lvlArrayPlus6:Array = [];
 
+		public var musicPlaying:Boolean = false;
+		public var snd_ChibiNinja = new ChibiNinja();
+		public var sndChn_ChibiNinja = new SoundChannel();
+		public var snd_DigitalNative = new DigitalNative();
+		public var sndChn_DigitalNative = new SoundChannel();
+		public var snd_ComeandFindMe = new ComeandFindMe();
+		public var sndChn_ComeandFindMe = new SoundChannel();
+		public var snd_AllofUs = new AllofUs();
+		public var sndChn_AllofUs = new SoundChannel();
+		public var snd_SingleTone = new SingleTone();
+		public var sndChn_SingleTone = new SoundChannel();
+		
 		/* LEVEL TEMPLATE
 		public var lvlArray_:Array = new Array(
 		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -712,6 +726,9 @@ public var lvlArrayPlus6:Array = [];
 			difficultyDown.addEventListener(MouseEvent.CLICK, possible);
 			
 			addEventListener(Event.ENTER_FRAME, textLoop);
+			
+			sndChn_ChibiNinja = snd_ChibiNinja.play(0,int.MAX_VALUE);
+			musicPlaying = true;
 		}
 		
 		public function textLoop(e:Event)
@@ -808,6 +825,8 @@ public var lvlArrayPlus6:Array = [];
 
 		public function beginNow(event:MouseEvent):void
 		{
+			currentLevel = 1;
+			
 			if(difficulty == 1)
 			{
 				createLevel();
@@ -844,6 +863,7 @@ public var lvlArrayPlus6:Array = [];
 		public function createLevel():void
 		{
 			removeEventListener(Event.ENTER_FRAME, textLoop);
+			musicPlaying = false;
 			
 			var lvlArray:Array = MovieClip(root)['lvlArray' + currentLevel];
 			//there will always be 38 rows, so this is how we find it out
@@ -1120,6 +1140,7 @@ public var lvlArrayPlus6:Array = [];
 		public function createLevelPlus():void
 		{
 			removeEventListener(Event.ENTER_FRAME, textLoop);
+			musicPlaying = false;
 			
 			var lvlArrayPlus:Array = MovieClip(root)['lvlArrayPlus' + currentLevel];
 			if(lvlArrayPlus == lvlArrayPlus6){
@@ -4284,6 +4305,42 @@ public var lvlArrayPlus6:Array = [];
 						}
 					}
 				}
+			}
+			
+			if(!musicPlaying)
+			{
+				if(currentLevel == 1)
+				{
+					sndChn_ChibiNinja.stop();
+					sndChn_DigitalNative = snd_DigitalNative.play(0,int.MAX_VALUE);
+				}
+				else if(currentLevel == 2)
+				{
+					sndChn_DigitalNative.stop();
+					sndChn_AllofUs = snd_AllofUs.play(0,int.MAX_VALUE);
+				}
+				else if(currentLevel == 3)
+				{
+					sndChn_AllofUs.stop();
+					sndChn_ComeandFindMe = snd_ComeandFindMe.play(0,int.MAX_VALUE);
+				}
+				else if(currentLevel == 4)
+				{
+					sndChn_ComeandFindMe.stop();
+					//sndChn_ComeandFindMe = snd_ComeandFindMe.play(0,int.MAX_VALUE);
+				}
+				else if(currentLevel == 5)
+				{
+					//sndChn_DigitalNative.stop();
+					//sndChn_ComeandFindMe = snd_ComeandFindMe.play(0,int.MAX_VALUE);
+				}
+				else if(currentLevel == 5)
+				{
+					//sndChn_DigitalNative.stop();
+					sndChn_SingleTone = snd_SingleTone.play(0,int.MAX_VALUE);
+				}
+				
+				musicPlaying = true;
 			}
 		}
 	}
