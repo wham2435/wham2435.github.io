@@ -5,21 +5,21 @@ Metadata
 --------
 Bytes         Value
 ----------    -----
-       703    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool> <xmp:CreateDate>2016-03-29T11:08:38-04:00</xmp:CreateDate> <xmp:MetadataDate>2016-05-24T12:23:25-04:00</xmp:MetadataDate> <xmp:ModifyDate>2016-05-24T12:23:25-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:InstanceID>xmp.iid:80EAAF7CCB21E611A56A9C99E83E4E1E</xmpMM:InstanceID> <xmpMM:DocumentID>xmp.did:80EAAF7CCB21E611A56A9C99E83E4E1E</xmpMM:DocumentID> <xmpMM:OriginalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</xmpMM:OriginalDocumentID> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:7DEAAF7CCB21E611A56A9C99E83E4E1E</stRef:instanceID> <stRef:documentID>xmp.did:617096BAC0F5E511AD5BF4729B12EE0B</stRef:documentID> <stRef:originalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</stRef:originalDocumentID> </xmpMM:DerivedFrom> </rdf:Description> </rdf:RDF> 
+       703    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool> <xmp:CreateDate>2016-03-29T11:08:38-04:00</xmp:CreateDate> <xmp:MetadataDate>2016-05-24T12:29:34-04:00</xmp:MetadataDate> <xmp:ModifyDate>2016-05-24T12:29:34-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:InstanceID>xmp.iid:81EAAF7CCB21E611A56A9C99E83E4E1E</xmpMM:InstanceID> <xmpMM:DocumentID>xmp.did:81EAAF7CCB21E611A56A9C99E83E4E1E</xmpMM:DocumentID> <xmpMM:OriginalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</xmpMM:OriginalDocumentID> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:7DEAAF7CCB21E611A56A9C99E83E4E1E</stRef:instanceID> <stRef:documentID>xmp.did:617096BAC0F5E511AD5BF4729B12EE0B</stRef:documentID> <stRef:originalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</stRef:originalDocumentID> </xmpMM:DerivedFrom> </rdf:Description> </rdf:RDF> 
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          69262          69262    Scene 1 (AS 3.0 Classes Export Frame)
-      2           8654          77916    
-      3           5441          83357    
-      4           6544          89901    
-      5           7461          97362    
-      6            722          98084    
-      7            724          98808    
+      1          69247          69247    Scene 1 (AS 3.0 Classes Export Frame)
+      2           8654          77901    
+      3           5441          83342    
+      4           6545          89887    
+      5           7462          97349    
+      6            722          98071    
+      7            724          98795    
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1          23269          1485                 49906
+Scene 1          23271          1485                 49892
 
 Symbol             Shape Bytes    Text Bytes    ActionScript Bytes
 ---------------    -----------    ----------    ------------------
@@ -54,11 +54,11 @@ Wall                        70             0                     0
 Font Name            Bytes         Characters
 -----------------    ----------    ----------
 TrebuchetMS                1664     1234ABCEGHILNOPSTYaelry 
-TimesNewRomanPSMT          9304     )-.0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 
+TimesNewRomanPSMT          9305     )-.0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 
 
 ActionScript Bytes    Location
 ------------------    --------
-             49906    Scene 1:Frame 1
+             49892    Scene 1:Frame 1
 
 Bitmap      Compressed    Original      Compression
 --------    ----------    ----------    -----------
