@@ -12,6 +12,9 @@
 	import flash.ui.Keyboard;
 	import flash.events.MouseEvent;
 	import KeyObject;
+	import flash.media.Sound;
+	import flash.media.SoundChannel;
+	import flash.net.URLRequest;
 
 	public class Main extends MovieClip
 	{
@@ -49,7 +52,7 @@
 		public var p3TextTime:int = 0;
 		public var p4TextTime:int = 0;
 
-		public var currentLevel:int = 1;
+		public var currentLevel:int = 0;
 		public var row:int = 0;
 
 		public var X:String = 'PLAYER';
@@ -186,6 +189,23 @@ public var downBumping4:Array = [];
 public var lvlArray6:Array = [];
 public var lvlArrayPlus6:Array = [];
 
+		public var musicPlaying:Boolean = false;
+		public var snd_ChibiNinja:Sound = new Sound();
+		public var req_ChibiNinja:URLRequest = new URLRequest ("ChibiNinja.mp3");
+		public var sndChn_ChibiNinja = new SoundChannel();
+		public var snd_DigitalNative:Sound = new Sound();
+		public var req_DigitalNative:URLRequest = new URLRequest ("DigitalNative.mp3");
+		public var sndChn_DigitalNative = new SoundChannel();
+		public var snd_ComeandFindMe:Sound = new Sound();
+		public var req_ComeandFindMe:URLRequest = new URLRequest ("ComeandFindMe.mp3");
+		public var sndChn_ComeandFindMe = new SoundChannel();
+		public var snd_AllofUs:Sound = new Sound();
+		public var req_AllofUs:URLRequest = new URLRequest ("AllofUs.mp3");
+		public var sndChn_AllofUs = new SoundChannel();
+		public var snd_SingleTone:Sound = new Sound();
+		public var req_SingleTone:URLRequest = new URLRequest ("SingleTone.mp3");
+		public var sndChn_SingleTone = new SoundChannel();
+		
 		/* LEVEL TEMPLATE
 		public var lvlArray_:Array = new Array(
 		1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -712,6 +732,39 @@ public var lvlArrayPlus6:Array = [];
 			difficultyDown.addEventListener(MouseEvent.CLICK, possible);
 			
 			addEventListener(Event.ENTER_FRAME, textLoop);
+			
+			snd_ChibiNinja.addEventListener(Event.COMPLETE, load_ChibiNinja);
+			snd_ChibiNinja.load(req_ChibiNinja);
+		}
+		
+		public function load_ChibiNinja(event:Event):void
+		{
+			var ChibiNinja:Sound = event.target as Sound;
+			sndChn_ChibiNinja = ChibiNinja.play(0,int.MAX_VALUE);
+		}
+		
+		public function load_DigitalNative(event:Event):void
+		{
+			var DigitalNative:Sound = event.target as Sound;
+			sndChn_DigitalNative = DigitalNative.play(0,int.MAX_VALUE);
+		}
+		
+		public function load_AllofUs(event:Event):void
+		{
+			var AllofUs:Sound = event.target as Sound;
+			sndChn_AllofUs = AllofUs.play(0,int.MAX_VALUE);
+		}
+		
+		public function load_ComeandFindMe(event:Event):void
+		{
+			var ComeandFindMe:Sound = event.target as Sound;
+			sndChn_ComeandFindMe = ComeandFindMe.play(0,int.MAX_VALUE);
+		}
+		
+		public function load_SingleTone(event:Event):void
+		{
+			var SingleTone:Sound = event.target as Sound;
+			sndChn_SingleTone = SingleTone.play(0,int.MAX_VALUE);
 		}
 		
 		public function textLoop(e:Event)
@@ -808,6 +861,8 @@ public var lvlArrayPlus6:Array = [];
 
 		public function beginNow(event:MouseEvent):void
 		{
+			currentLevel = 1;
+			
 			if(difficulty == 1)
 			{
 				createLevel();
@@ -816,7 +871,7 @@ public var lvlArrayPlus6:Array = [];
 			else if(difficulty == 2)
 			{
 				createLevelPlus();
-				gotoAndStop(7);
+				gotoAndStop(1);
 			}
 			else
 			{
@@ -844,6 +899,7 @@ public var lvlArrayPlus6:Array = [];
 		public function createLevel():void
 		{
 			removeEventListener(Event.ENTER_FRAME, textLoop);
+			musicPlaying = false;
 			
 			var lvlArray:Array = MovieClip(root)['lvlArray' + currentLevel];
 			//there will always be 38 rows, so this is how we find it out
@@ -1120,10 +1176,11 @@ public var lvlArrayPlus6:Array = [];
 		public function createLevelPlus():void
 		{
 			removeEventListener(Event.ENTER_FRAME, textLoop);
+			musicPlaying = false;
 			
 			var lvlArrayPlus:Array = MovieClip(root)['lvlArrayPlus' + currentLevel];
 			if(lvlArrayPlus == lvlArrayPlus6){
-				gotoAndStop(10);
+				gotoAndStop(7);
 			}{
 			var lvlColumns:int = Math.ceil(lvlArrayPlus.length / 42);
 			for (var i:int = 0; i<lvlArrayPlus.length; i++)
@@ -2084,10 +2141,10 @@ public var lvlArrayPlus6:Array = [];
 			}
 			
 			//Skip
-			/*if(e.keyCode == Keyboard.N)
+			if(e.keyCode == Keyboard.N)
 			{
 				nextLevel();
-			}*/
+			}
 		}
 		
 		public function playerLoop(e:Event)
@@ -4284,6 +4341,46 @@ public var lvlArrayPlus6:Array = [];
 						}
 					}
 				}
+			}
+			
+			if(!musicPlaying)
+			{
+				if(currentLevel == 1)
+				{
+					sndChn_ChibiNinja.stop();
+					snd_DigitalNative.addEventListener(Event.COMPLETE, load_DigitalNative);
+					snd_DigitalNative.load(req_DigitalNative);
+				}
+				else if(currentLevel == 2)
+				{
+					sndChn_DigitalNative.stop();
+					snd_AllofUs.addEventListener(Event.COMPLETE, load_AllofUs);
+					snd_AllofUs.load(req_AllofUs);
+				}
+				else if(currentLevel == 3)
+				{
+					sndChn_AllofUs.stop();
+					snd_ComeandFindMe.addEventListener(Event.COMPLETE, load_ComeandFindMe);
+					snd_ComeandFindMe.load(req_ComeandFindMe);
+				}
+				else if(currentLevel == 4)
+				{
+					sndChn_ComeandFindMe.stop();
+					//sndChn_ChibiNinja = snd_ChibiNinja.play(0,int.MAX_VALUE);
+				}
+				else if(currentLevel == 5)
+				{
+					//sndChn_ChibiNinja.stop();
+					//sndChn_DigitalNative = snd_DigitalNative.play(0,int.MAX_VALUE);
+				}
+				else if(currentLevel == 6)
+				{
+					//sndChn_DigitalNative.stop();
+					snd_SingleTone.addEventListener(Event.COMPLETE, load_SingleTone);
+					snd_SingleTone.load(req_SingleTone);
+				}
+				
+				musicPlaying = true;
 			}
 		}
 	}
