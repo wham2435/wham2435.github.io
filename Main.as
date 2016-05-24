@@ -205,6 +205,12 @@ public var lvlArrayPlus6:Array = [];
 		public var snd_SingleTone:Sound = new Sound();
 		public var req_SingleTone:URLRequest = new URLRequest ("SingleTone.mp3");
 		public var sndChn_SingleTone = new SoundChannel();
+		public var snd_ANightOfDizzySpells:Sound = new Sound();
+		public var req_ANightOfDizzySpells:URLRequest = new URLRequest ("ANightOfDizzySpells.mp3");
+		public var sndChn_ANightOfDizzySpells = new SoundChannel();
+		public var snd_HHavok:Sound = new Sound();
+		public var req_HHavok:URLRequest = new URLRequest ("HHavok.mp3");
+		public var sndChn_HHavok = new SoundChannel();
 		
 		/* LEVEL TEMPLATE
 		public var lvlArray_:Array = new Array(
@@ -765,6 +771,18 @@ public var lvlArrayPlus6:Array = [];
 		{
 			var SingleTone:Sound = event.target as Sound;
 			sndChn_SingleTone = SingleTone.play(0,int.MAX_VALUE);
+		}
+		
+		public function load_ANightOfDizzySpells(event:Event):void
+		{
+			var ANightOfDizzySpells:Sound = event.target as Sound;
+			sndChn_ANightOfDizzySpells = ANightOfDizzySpells.play(0,int.MAX_VALUE);
+		}
+		
+		public function load_HHavok(event:Event):void
+		{
+			var HHavok:Sound = event.target as Sound;
+			sndChn_HHavok = HHavok.play(0,int.MAX_VALUE);
 		}
 		
 		public function textLoop(e:Event)
@@ -2141,10 +2159,10 @@ public var lvlArrayPlus6:Array = [];
 			}
 			
 			//Skip
-			/*if(e.keyCode == Keyboard.N)
+			if(e.keyCode == Keyboard.N)
 			{
 				nextLevel();
-			}*/
+			}
 		}
 		
 		public function playerLoop(e:Event)
@@ -4366,16 +4384,18 @@ public var lvlArrayPlus6:Array = [];
 				else if(currentLevel == 4)
 				{
 					sndChn_ComeandFindMe.stop();
-					//sndChn_ChibiNinja = snd_ChibiNinja.play(0,int.MAX_VALUE);
+					snd_ANightOfDizzySpells.addEventListener(Event.COMPLETE, load_ANightOfDizzySpells);
+					snd_ANightOfDizzySpells.load(req_ANightOfDizzySpells);
 				}
 				else if(currentLevel == 5)
 				{
-					//sndChn_ChibiNinja.stop();
-					//sndChn_DigitalNative = snd_DigitalNative.play(0,int.MAX_VALUE);
+					sndChn_ANightOfDizzySpells.stop();
+					snd_HHavok.addEventListener(Event.COMPLETE, load_HHavok);
+					snd_HHavok.load(req_HHavok);
 				}
 				else if(currentLevel == 6)
 				{
-					//sndChn_DigitalNative.stop();
+					sndChn_HHavok.stop();
 					snd_SingleTone.addEventListener(Event.COMPLETE, load_SingleTone);
 					snd_SingleTone.load(req_SingleTone);
 				}
