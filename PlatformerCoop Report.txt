@@ -5,64 +5,79 @@ Metadata
 --------
 Bytes         Value
 ----------    -----
-       702    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool> <xmp:CreateDate>2016-03-29T11:08:38-04:00</xmp:CreateDate> <xmp:MetadataDate>2016-05-24T13:07:01-04:00</xmp:MetadataDate> <xmp:ModifyDate>2016-05-24T13:07:01-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:InstanceID>xmp.iid:84EAAF7CCB21E611A56A9C99E83E4E1E</xmpMM:InstanceID> <xmpMM:DocumentID>xmp.did:84EAAF7CCB21E611A56A9C99E83E4E1E</xmpMM:DocumentID> <xmpMM:OriginalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</xmpMM:OriginalDocumentID> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:7DEAAF7CCB21E611A56A9C99E83E4E1E</stRef:instanceID> <stRef:documentID>xmp.did:617096BAC0F5E511AD5BF4729B12EE0B</stRef:documentID> <stRef:originalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</stRef:originalDocumentID> </xmpMM:DerivedFrom> </rdf:Description> </rdf:RDF> 
+       694    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool> <xmp:CreateDate>2016-03-29T11:08:38-04:00</xmp:CreateDate> <xmp:MetadataDate>2016-05-25T13:20:17-04:00</xmp:MetadataDate> <xmp:ModifyDate>2016-05-25T13:20:17-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:InstanceID>xmp.iid:60CA0F9D9B22E611B9FCA9797F5C5F68</xmpMM:InstanceID> <xmpMM:DocumentID>xmp.did:60CA0F9D9B22E611B9FCA9797F5C5F68</xmpMM:DocumentID> <xmpMM:OriginalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</xmpMM:OriginalDocumentID> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:52EA4C327222E611B9FCA9797F5C5F68</stRef:instanceID> <stRef:documentID>xmp.did:617096BAC0F5E511AD5BF4729B12EE0B</stRef:documentID> <stRef:originalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</stRef:originalDocumentID> </xmpMM:DerivedFrom> </rdf:Description> </rdf:RDF> 
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          69545          69545    Scene 1 (AS 3.0 Classes Export Frame)
-      2           8646          78191    
-      3           5436          83627    
-      4           6539          90166    
-      5           7455          97621    
-      6            721          98342    
-      7            723          99065    
+      1          69860          69860    Scene 1 (AS 3.0 Classes Export Frame)
+      2           9963          79823    
+      3           5380          85203    
+      4           6461          91664    
+      5           7366          99030    
+      6            713          99743    
+      7            714         100457    
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1          23249          1485                 50208
+Scene 1          23014          1468                 50751
 
 Symbol             Shape Bytes    Text Bytes    ActionScript Bytes
 ---------------    -----------    ----------    ------------------
+Lvl5ButtonPlus               0            91                     0
+Lvl4ButtonPlus               0            91                     0
+Lvl3ButtonPlus              29            91                     0
+Lvl2ButtonPlus               0            91                     0
+Lvl1ButtonPlus               0            91                     0
+Lvl5Button                   0            91                     0
+Lvl4Button                   0            91                     0
+Lvl3Button                  29            91                     0
+Lvl2Button                   0            91                     0
+Lvl1Button                   0            91                     0
+Lvl5                         0             0                     0
+Lvl4                         0             0                     0
+Lvl3                         0             0                     0
+Lvl2                         0             0                     0
+Lvl1                         0             0                     0
 AddPlayer                   20             0                     0
-BEGIN                       31           190                     0
+BEGIN                       31           188                     0
 ButtonMoveLeft               0             0                     0
 ButtonMoveRight              0             0                     0
 DeathsText                   0             0                     0
-Goal                      5986             0                     0
+Goal                      5917             0                     0
 Ice                         36             0                     0
-LConveyor                   87             0                     0
-Opener                     770             0                     0
-P1 Forfeit                   0           103                     0
-P2 Forfeit                   0           103                     0
-P3 Forfeit                   0           103                     0
-P4 Forfeit                   0           103                     0
+LConveyor                   86             0                     0
+Opener                     759             0                     0
+P1 Forfeit                   0           102                     0
+P2 Forfeit                   0           102                     0
+P3 Forfeit                   0           102                     0
+P4 Forfeit                   0           102                     0
 Platform                    27             0                     0
-Player                     330             0                     0
-Player2                    163             0                     0
-Player3                    163             0                     0
-Player4                    163             0                     0
-Possibility                  0           277                     0
-Press Jump                   0            99                     0
-RConveyor                   85             0                     0
-Spike                      139             0                     0
-Spring                      86             0                     0
+Player                     326             0                     0
+Player2                    161             0                     0
+Player3                    161             0                     0
+Player4                    161             0                     0
+Possibility                  0           274                     0
+Press Jump                   0            98                     0
+RConveyor                   84             0                     0
+Spike                      137             0                     0
+Spring                      85             0                     0
 SubtractPlayer               0             0                     0
-Symbol 2                    24             0                     0
+Symbol 2                    23             0                     0
 Symbol 3                     0             0                     0
-Wall                        70             0                     0
+Wall                        69             0                     0
 
 Font Name            Bytes         Characters
 -----------------    ----------    ----------
-TrebuchetMS                1663     1234ABCEGHILNOPSTYaelry 
-TimesNewRomanPSMT          9296     )-.0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 
+TrebuchetMS                1702     12345ABCEGHILNOPSTYaelry 
+TimesNewRomanPSMT          9186     )-.0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 
 
 ActionScript Bytes    Location
 ------------------    --------
-             50208    Scene 1:Frame 1
+             50751    Scene 1:Frame 1
 
 Bitmap      Compressed    Original      Compression
 --------    ----------    ----------    -----------
-Bitmap 5           879         65536    JPEG Quality=80
+Bitmap 5           869         65536    JPEG Quality=80
 
 
 
