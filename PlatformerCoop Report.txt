@@ -5,21 +5,21 @@ Metadata
 --------
 Bytes         Value
 ----------    -----
-       693    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool> <xmp:CreateDate>2016-03-29T11:08:38-04:00</xmp:CreateDate> <xmp:MetadataDate>2016-05-25T13:50:36-04:00</xmp:MetadataDate> <xmp:ModifyDate>2016-05-25T13:50:36-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:InstanceID>xmp.iid:67CA0F9D9B22E611B9FCA9797F5C5F68</xmpMM:InstanceID> <xmpMM:DocumentID>xmp.did:67CA0F9D9B22E611B9FCA9797F5C5F68</xmpMM:DocumentID> <xmpMM:OriginalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</xmpMM:OriginalDocumentID> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:52EA4C327222E611B9FCA9797F5C5F68</stRef:instanceID> <stRef:documentID>xmp.did:617096BAC0F5E511AD5BF4729B12EE0B</stRef:documentID> <stRef:originalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</stRef:originalDocumentID> </xmpMM:DerivedFrom> </rdf:Description> </rdf:RDF> 
+       693    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool> <xmp:CreateDate>2016-03-29T11:08:38-04:00</xmp:CreateDate> <xmp:MetadataDate>2016-05-25T14:10:33-04:00</xmp:MetadataDate> <xmp:ModifyDate>2016-05-25T14:10:33-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:InstanceID>xmp.iid:711D01F9A322E611B9FCA9797F5C5F68</xmpMM:InstanceID> <xmpMM:DocumentID>xmp.did:711D01F9A322E611B9FCA9797F5C5F68</xmpMM:DocumentID> <xmpMM:OriginalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</xmpMM:OriginalDocumentID> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:52EA4C327222E611B9FCA9797F5C5F68</stRef:instanceID> <stRef:documentID>xmp.did:617096BAC0F5E511AD5BF4729B12EE0B</stRef:documentID> <stRef:originalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</stRef:originalDocumentID> </xmpMM:DerivedFrom> </rdf:Description> </rdf:RDF> 
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          69812          69812    Scene 1 (AS 3.0 Classes Export Frame)
-      2           9916          79728    
-      3           5365          85093    
-      4           6456          91549    
-      5           7361          98910    
-      6            723          99633    
-      7            714         100347    
+      1          69796          69796    Scene 1 (AS 3.0 Classes Export Frame)
+      2           9916          79712    
+      3           5365          85077    
+      4           6456          91533    
+      5           7361          98894    
+      6            723          99617    
+      7            714         100331    
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1          22973          1446                 50712
+Scene 1          22974          1446                 50696
 
 Symbol             Shape Bytes    Text Bytes    ActionScript Bytes
 ---------------    -----------    ----------    ------------------
@@ -73,7 +73,7 @@ TimesNewRomanPSMT          9185     !-.0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcd
 
 ActionScript Bytes    Location
 ------------------    --------
-             50712    Scene 1:Frame 1
+             50696    Scene 1:Frame 1
 
 Bitmap      Compressed    Original      Compression
 --------    ----------    ----------    -----------
