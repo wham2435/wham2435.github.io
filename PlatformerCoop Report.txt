@@ -5,21 +5,21 @@ Metadata
 --------
 Bytes         Value
 ----------    -----
-       693    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool> <xmp:CreateDate>2016-03-29T11:08:38-04:00</xmp:CreateDate> <xmp:MetadataDate>2016-05-25T13:24:26-04:00</xmp:MetadataDate> <xmp:ModifyDate>2016-05-25T13:24:26-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:InstanceID>xmp.iid:62CA0F9D9B22E611B9FCA9797F5C5F68</xmpMM:InstanceID> <xmpMM:DocumentID>xmp.did:62CA0F9D9B22E611B9FCA9797F5C5F68</xmpMM:DocumentID> <xmpMM:OriginalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</xmpMM:OriginalDocumentID> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:52EA4C327222E611B9FCA9797F5C5F68</stRef:instanceID> <stRef:documentID>xmp.did:617096BAC0F5E511AD5BF4729B12EE0B</stRef:documentID> <stRef:originalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</stRef:originalDocumentID> </xmpMM:DerivedFrom> </rdf:Description> </rdf:RDF> 
+       693    <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/"> <xmp:CreatorTool>Adobe Flash Professional CS6 - build 481</xmp:CreatorTool> <xmp:CreateDate>2016-03-29T11:08:38-04:00</xmp:CreateDate> <xmp:MetadataDate>2016-05-25T13:50:36-04:00</xmp:MetadataDate> <xmp:ModifyDate>2016-05-25T13:50:36-04:00</xmp:ModifyDate> </rdf:Description> <rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/"> <dc:format>application/x-shockwave-flash</dc:format> </rdf:Description> <rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"> <xmpMM:InstanceID>xmp.iid:67CA0F9D9B22E611B9FCA9797F5C5F68</xmpMM:InstanceID> <xmpMM:DocumentID>xmp.did:67CA0F9D9B22E611B9FCA9797F5C5F68</xmpMM:DocumentID> <xmpMM:OriginalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</xmpMM:OriginalDocumentID> <xmpMM:DerivedFrom rdf:parseType="Resource"> <stRef:instanceID>xmp.iid:52EA4C327222E611B9FCA9797F5C5F68</stRef:instanceID> <stRef:documentID>xmp.did:617096BAC0F5E511AD5BF4729B12EE0B</stRef:documentID> <stRef:originalDocumentID>xmp.did:607096BAC0F5E511AD5BF4729B12EE0B</stRef:originalDocumentID> </xmpMM:DerivedFrom> </rdf:Description> </rdf:RDF> 
 
 Frame #    Frame Bytes    Total Bytes    Scene
 -------    -----------    -----------    -----
-      1          69696          69696    Scene 1 (AS 3.0 Classes Export Frame)
-      2           9841          79537    
-      3           5372          84909    
-      4           6452          91361    
-      5           7355          98716    
-      6            710          99426    
-      7            713         100139    
+      1          69812          69812    Scene 1 (AS 3.0 Classes Export Frame)
+      2           9916          79728    
+      3           5365          85093    
+      4           6456          91549    
+      5           7361          98910    
+      6            723          99633    
+      7            714         100347    
 
 Scene      Shape Bytes    Text Bytes    ActionScript Bytes
 -------    -----------    ----------    ------------------
-Scene 1          22956          1385                 50675
+Scene 1          22973          1446                 50712
 
 Symbol             Shape Bytes    Text Bytes    ActionScript Bytes
 ---------------    -----------    ----------    ------------------
@@ -43,10 +43,10 @@ BEGIN                       31           188                     0
 ButtonMoveLeft               0             0                     0
 ButtonMoveRight              0             0                     0
 DeathsText                   0             0                     0
-Goal                      5906             0                     0
+Goal                      5913             0                     0
 Ice                         36             0                     0
 LConveyor                   86             0                     0
-Opener                     756             0                     0
+Opener                     759             0                     0
 P1 Forfeit                   0           102                     0
 P2 Forfeit                   0           102                     0
 P3 Forfeit                   0           102                     0
@@ -57,7 +57,7 @@ Player2                    161             0                     0
 Player3                    161             0                     0
 Player4                    161             0                     0
 Possibility                  0           274                     0
-Press Jump                   0            97                     0
+Press Jump                   0            98                     0
 RConveyor                   84             0                     0
 Spike                      137             0                     0
 Spring                      85             0                     0
@@ -68,16 +68,16 @@ Wall                        69             0                     0
 
 Font Name            Bytes         Characters
 -----------------    ----------    ----------
-TrebuchetMS                1699     12345ABCEGHILNOPSTYaelry 
-TimesNewRomanPSMT          9113     -.0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 
+TrebuchetMS                1701     12345ABCEGHILNOPSTYaelry 
+TimesNewRomanPSMT          9185     !-.0123456789:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz 
 
 ActionScript Bytes    Location
 ------------------    --------
-             50675    Scene 1:Frame 1
+             50712    Scene 1:Frame 1
 
 Bitmap      Compressed    Original      Compression
 --------    ----------    ----------    -----------
-Bitmap 5           867         65536    JPEG Quality=80
+Bitmap 5           868         65536    JPEG Quality=80
 
 
 
