@@ -1,4 +1,5 @@
 Portfolio:
+(Look at the Screenshots folder for images of all my projects)
 
 When I first started programming I knew I wanted to code a game but I wasn't sure where to start.  I took the javascript course on Codecademy to learn
 some sintax and get used to the coding language but qickly moved on to Flash.  Flash was a good program to start with because the coding 
